@@ -2401,7 +2401,7 @@ H^0= &amp; \begin{array}{r}\text{Branch 1}\vphantom{H^0_{\ell n}}\\\text{Branch 
 &amp; \left.\vphantom{\begin{array}{c}H^0_{11}\vphantom{H^0_{\ell n}}\\H^0_{21}\vphantom{H^0_{\ell n}}\\\vdots\vphantom{\vdots}\\H^0_{\ell1}\vphantom{H^0_{\ell n}}\end{array}}\right]
 \end{array}.
 \]</span></p>
-<p><span class="math inline">\(H^0_{\ell n}\)</span>: If we inject 1 MW at bus <span class="math inline">\(n\)</span> and withdraw 1 MW at the reference bus, how much would the power flow change on the monitored branch <span class="math inline">\(\ell\)</span>? <sup><a href="https://matpower.app/manual/matpower/LinearShiftFactors.html" style="color: inherit; text-decoration: none;">[1]</a></sup></p>
+<p><span class="math inline">\(H^0_{\ell n}\)</span>: If we inject 1 MW at bus <span class="math inline">\(n\)</span> and withdraw 1 MW at the reference bus, how much would the power flow change on the monitored branch <span class="math inline">\(\ell\)</span>? <sup><a href="#ref-1" style="color: inherit; text-decoration: none;">[1]</a></sup></p>
 <p>Question: Why is the last column of <span class="math inline">\(H^0\)</span> zero?<br>
 Answer: The last column corresponds to the reference bus. For this column, the 1 MW injection and 1 MW withdrawal occur at the same bus and cancel out. No branch flow changes, so every entry in the column is zero.</p>
 </section>
@@ -2495,7 +2495,7 @@ c+q_{\mathrm{in}}^{\prime}=q_{\mathrm{out}}^{\prime}+\widetilde f. \tag{2}
 <p><span class="math display">\[
 q_{\mathrm{in}}^{\prime}=q_{\mathrm{out}}^{\prime}. \tag{3}
 \]</span></p>
-<p>The idea here is to add a virtual transfer from the source node to the sink node, which changes the power flows in the grid. After that, we remove the target line and the virtual transfer together. If the virtual transfer is exactly equal to the power flow on the outage line after the transfer is added, then power balance still holds. Therefore, the flows on the remaining lines are the post-outage flows.</p>
+<p>The idea here is to add a virtual transfer from the source node to the sink node, which changes the power flows in the grid. After that, we remove the target line and the virtual transfer together. If the virtual transfer is exactly equal to the power flow on the outage line after the transfer is added, then power balance still holds. Therefore, the flows on the remaining lines are the post-outage flows. <sup><a href="#ref-2" style="color: inherit; text-decoration: none;">[2]</a></sup></p>
 <p>Let’s explore the math.</p>
 <p>For each scheduled outage line <span class="math inline">\(o_j\)</span>, let’s add a virtual transfer <span class="math inline">\(c_{o_j}\)</span> MW. The transfer vector is <span class="math inline">\(c_O\in\mathbb R^m\)</span>:</p>
 <p><span class="math display">\[
@@ -2612,6 +2612,11 @@ H^O_{\ell n}=
 \widehat H_{\ell n}, &amp; \ell\notin O.
 \end{cases}
 \]</span></p>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<p><a id="ref-1" href></a><strong>[1]</strong> MATPOWER. <a href="https://matpower.app/manual/matpower/LinearShiftFactors.html"><em>MATPOWER User’s Manual</em>, Section 4.5: Linear Shift Factors</a>.</p>
+<p><a id="ref-2" href></a><strong>[2]</strong> Güler, T.; Gross, G.; Liu, M. <a href="https://doi.org/10.1109/TPWRS.2006.888950">Generalized Line Outage Distribution Factors</a>. <em>IEEE Transactions on Power Systems</em> <strong>2007</strong>, <em>22</em> (2), 879–881.</p>
 </section>
 
 </main>

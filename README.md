@@ -6,3 +6,4 @@ A series of notebooks that introducing the power grid and power grid market from
 [002: A Brief History of Power Grid](https://xyli2024.github.io/Intro-to-power-grid/002_A_Brief_History_of_Power_Grid.html)<br>
 ...<br>
 [0XX: Post-Contingency PTDF Update](https://xyli2024.github.io/Intro-to-power-grid/0XX_Post-Contingency_PTDF_Update.html)<br>
+[0X1: Understanding FTRs and Shadow Prices](https://xyli2024.github.io/Intro-to-power-grid/0X1_FTR_and_Shadow_prices.html)<br>
